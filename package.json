@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "nodemon server.js",
+    "deploy": "netlify deploy"
     "depth": "npm ls --depth=0"
   },
   "dependencies": {
