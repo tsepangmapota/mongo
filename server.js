@@ -50,7 +50,7 @@ db.connect((err) => {
 // Promisify the query function for async/await support
 const query = promisify(db.query).bind(db);
 
-// Middleware for error handling
+// Middleware for error handling in the app
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Something went wrong!' });
